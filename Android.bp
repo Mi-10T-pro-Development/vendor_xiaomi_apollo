@@ -5105,7 +5105,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/camera/components/com.mi.node.watermark.so",
             ],
             shared_libs: [
-                "libpiex_shim",
+                "libui_shim",
                 "libcutils",
                 "libutils",
                 "libcamera_metadata",
@@ -5115,6 +5115,7 @@ cc_prebuilt_library_shared {
                 "libpng",
                 "libz",
                 "libpiex",
+                //"libpiex_shim",
                 "libexpat",
                 "libdng_sdk2vendor",
                 "libEGL",
@@ -5133,6 +5134,7 @@ cc_prebuilt_library_shared {
     relative_install_path: "camera/components",
     prefer: true,
     soc_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
